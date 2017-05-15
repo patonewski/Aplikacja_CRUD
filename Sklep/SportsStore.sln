@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{78F8A2D8-0F61-4548-8DBC-C8D231E6D744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStore.WebUI", "SportStore.WebUI\SportStore.WebUI.csproj", "{BA4FB8E5-803C-4D68-8E12-BBEF23211A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.WebUI", "SportStore.WebUI\SportsStore.WebUI.csproj", "{BA4FB8E5-803C-4D68-8E12-BBEF23211A32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.UnitTests", "SportsStore.UnitTests\SportsStore.UnitTests.csproj", "{5749A437-44F9-44A0-BA94-80CAA0D19EF3}"
 EndProject
