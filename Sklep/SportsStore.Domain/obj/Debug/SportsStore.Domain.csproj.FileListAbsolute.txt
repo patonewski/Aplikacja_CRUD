@@ -16,3 +16,8 @@ C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debu
 C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Paton\Documents\GitHub\Aplikacja_CRUD\Sklep\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
