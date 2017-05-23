@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
@@ -13,7 +13,7 @@
     </div>
     <div class="row panel">
         <div id="categories" class="col-xs-3">
-            Później umieścimy tu coś użytecznego.
+            @Html.Action("Menu", "Nav")
         </div>
         <div class="col-xs-8">
             @RenderBody()
