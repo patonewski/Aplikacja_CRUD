@@ -1,39 +1,27 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SportsStore.WebUI.Models;
-using SportsStore.WebUI.HtmlHelpers;
+using SportsStore.Domain.Entities;
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class CartTests
     {
         [TestMethod]
-        public void Can_Paginate()
+        public void Can_Add_New_Lines()
         {
-            // …polecenie usunięte w celu zachowania zwięzłości…
-        }
-        [TestMethod]
-        public void Can_Generate_Page_Links()
-        {
-            // przygotowanie — definiowanie metody pomocniczej HTML — potrzebujemy tego,
-            // aby użyć metody rozszerzającej
-            HtmlHelper myHelper = null;
-            // przygotowanie — tworzenie danych PagingInfo
-            PagingInfo pagingInfo = new PagingInfo
-            {
-                CurrentPage = 2,
-                TotalItems = 28,
-                ItemsPerPage = 10
-            };
-            // przygotowanie — konfigurowanie delegatu z użyciem wyrażenia lambda
-            Func<int, string> pageUrlDelegate = i => "Strona" + i;
+            // przygotowanie — utworzenie produktów testowych
+            Product p1 = new Product { ProductID = 1, Name = "P1" };
+            Product p2 = new Product { ProductID = 2, Name = "P2" };
+            // przygotowanie — utworzenie nowego koszyka
+            Cart target = new Cart();
             // działanie
-            MvcHtmlString result = myHelper.PageLinks(pagingInfo, pageUrlDelegate);
+            target.AddItem(p1, 1);
+            target.AddItem(p2, 1);
+            CartLine[] results = target.Lines.ToArray();
             // asercje
-            Assert.AreEqual(@"<a class=""btn btn-default"" href=""Strona1"">1</a>"
-            + @"<a class="" btn btn-default btn-primary selected"" href=""Strona2"">2</a>"
-            + @"<a class=""btn btn-default"" href=""Strona3"">3</a>", result.ToString());
+            Assert.AreEqual(results.Length, 2);
+            Assert.AreEqual(results[0].Product, p1);
+            Assert.AreEqual(results[1].Product, p2);
         }
     }
 }
